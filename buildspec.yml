@@ -1,0 +1,13 @@
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - yarn install
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
